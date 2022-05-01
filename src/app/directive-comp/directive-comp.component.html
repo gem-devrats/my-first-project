@@ -1,0 +1,7 @@
+<p>directive-comp works!</p>
+<p *ngFor='let item of names;index as i'> {{item}}</p>
+<p>{{names}}</p>
+<button type="submit" (click)="add('pikachu')">Submit</button>
+<br>
+<button type="submit" (click)="remove(3)">Submit</button>
+<p [ngClass]="color=='blue'?'blue':'red'">What Happens</p>
