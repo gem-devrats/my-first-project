@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { ChildComponent } from './child/child.component';
 
 @Component({
   selector: 'app-root',
@@ -7,22 +8,25 @@ import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit, AfterViewInit,OnDestroy {
   title = 'my-first-project';
+  @ViewChild(ChildComponent) pikachu! :ChildComponent;
+
+  constructor() {
+    console.log("constructor")
+  }
 
   ngOnInit(): void {
     console.log("onit")
   }
-
-  ngOnDestroy(): void {
-    console.log("one")
-  }
-
   ngAfterViewInit(): void {
     // called when child changed
     console.log("pikachu")
+    console.log(this.pikachu)
   }
-  constructor() {
-    console.log("constructor")
+
+  ngOnDestroy(): void {
+    console.log("destroy")
   }
+ 
   name : String = "Devvrat";
   styler = {
     color:"blue"
@@ -33,4 +37,14 @@ export class AppComponent implements OnInit, AfterViewInit,OnDestroy {
   one() {
     console.log("hello")
   }
+
+  receive(event:any){
+    console.log("one");
+    // console.log(event);
+  }
+
+  
+  // hello():any{
+  //   console.log(this.pikachu)
+  // }
 }

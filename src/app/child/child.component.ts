@@ -11,9 +11,13 @@ export class ChildComponent implements OnInit {
 
   childId:Number = 54;
 
-  @Output() childData: EventEmitter<string> = new EventEmitter();
+  // @Output() childData: EventEmitter<Number> = new EventEmitter();
 
   constructor() { } 
+
+  // sendToParent(){
+  //   this.childData.emit(this.childId)
+  // }
 
   ngOnInit(): void {
   }
