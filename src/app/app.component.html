@@ -1,13 +1,31 @@
 <!-- <div app-comp>
 
 </div> -->
-<!-- <p [style]="styler" *ngIf="hidden"> Hello world</p>
+<!-- 
 <button value="submit" style="height: fit-content;" type="submit" (click)="one()">Submit</button>
 {{name}} -->
 
-<input type="text"  [(ngModel)]="name">
+<!-- <p [style]="styler" *ngIf="hidden; then thenBlock; else elseBlock"> Hello world</p>
+<ng-template #elseBlock>
+    <h1> Hello Worlds of wonder</h1>
+</ng-template>
+
+<ng-template #thenBlock>
+    <h1> Hello Worlds of wonder</h1>
+</ng-template> -->
+<!-- <input type="text"  [(ngModel)]="name"> -->
 <!-- <app-directive-comp></app-directive-comp> -->
 
 <!-- <app-pipe-comp></app-pipe-comp> -->
 <!-- <app-child [data]="name" (childData)="receive($event)"></app-child> -->
-<app-child [data]="name"></app-child>
+<!-- <app-child [data]="name"></app-child> -->
+
+<!-- <input type="text" name="" id="" #my> -->
+<!-- <button type="button" (click)="templateRefrence(my)">Click</button> -->
+
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">Red</div>
+    <div *ngSwitchCase="'green'">green</div>
+    <div *ngSwitchCase="'blue'">blue</div>
+</div>

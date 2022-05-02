@@ -27,6 +27,7 @@ export class AppComponent implements OnInit, AfterViewInit,OnDestroy {
     console.log("destroy")
   }
  
+  color :string = "blue"
   name : String = "Devvrat";
   styler = {
     color:"blue"
@@ -43,6 +44,9 @@ export class AppComponent implements OnInit, AfterViewInit,OnDestroy {
     // console.log(event);
   }
 
+  templateRefrence(value:any){
+    console.log(value)
+  }
   
   // hello():any{
   //   console.log(this.pikachu)
