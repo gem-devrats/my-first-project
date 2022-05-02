@@ -8,6 +8,7 @@ import { DirectiveCompComponent } from './directive-comp/directive-comp.componen
 import { PipeCompComponent } from './pipe-comp/pipe-comp.component';
 import { PiperPipe } from './piper.pipe';
 import { DirectivereDirective } from './directivere.directive';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DirectivereDirective } from './directivere.directive';
     DirectiveCompComponent,
     PipeCompComponent,
     PiperPipe,
-    DirectivereDirective
+    DirectivereDirective,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

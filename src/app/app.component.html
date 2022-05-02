@@ -1,11 +1,12 @@
-<div app-comp>
+<!-- <div app-comp>
 
-</div>
+</div> -->
 <!-- <p [style]="styler" *ngIf="hidden"> Hello world</p>
 <button value="submit" style="height: fit-content;" type="submit" (click)="one()">Submit</button>
-<input type="text"  [(ngModel)]="name">
 {{name}} -->
 
-<app-directive-comp></app-directive-comp>
+<input type="text"  [(ngModel)]="name">
+<!-- <app-directive-comp></app-directive-comp> -->
 
 <!-- <app-pipe-comp></app-pipe-comp> -->
+<app-child [data]="name"></app-child>
